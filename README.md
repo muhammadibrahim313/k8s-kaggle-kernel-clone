@@ -23,17 +23,7 @@
   >
   </video>
 </p>
---
-<a id="demo"></a>
 
-<p align="center">
-  <video
-    src="https://github.com/muhammadibrahim313/k8s-kaggle-kernel-clone/raw/main/assets/demo.mp4"
-    width="900"
-    controls
-  >
-  </video>
-</p>
 <p align="center">
   <sub>Create notebook → start session → run code → upload CSV → load with pandas</sub>
 </p>
