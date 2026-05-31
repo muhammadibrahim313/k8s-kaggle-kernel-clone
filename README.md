@@ -187,5 +187,5 @@ kubectl logs -n kaggle-kernel deployment/kaggle-kernel-ui -f
 ---
 
 <p align="center">
-  <sub>Inspired by <a href="https://github.com/mageshkrishna">mageshkrishna</a></sub>
+  <sub>Inspired by mageshkrishna work </a></sub>
 </p>
