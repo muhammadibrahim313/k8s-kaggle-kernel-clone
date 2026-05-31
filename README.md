@@ -1,21 +1,33 @@
+<h1 align="center">K8s Kaggle Kernel Clone</h1>
+
+<p align="center">
+  Self-hosted notebook platform — one notebook, one Kubernetes pod, zero local setup.
+</p>
+
+<p align="center">
+  <a href="#demo">Demo</a> •
+  <a href="#architecture">Architecture</a> •
+  <a href="#running-locally-on-macos">Installation</a> •
+  <a href="#how-it-works--session-flow">Session Flow</a>
+</p>
+
+<br>
+
+<a id="demo"></a>
+
 <p align="center">
   <video
     src="https://github.com/muhammadibrahim313/k8s-kaggle-kernel-clone/raw/main/assets/demo.mp4"
     width="900"
-    poster="https://github.com/muhammadibrahim313/k8s-kaggle-kernel-clone/raw/main/assets/demo-thumbnail.png"
     controls
-    preload="metadata"
   >
   </video>
 </p>
+
 <p align="center">
   <sub>Create notebook → start session → run code → upload CSV → load with pandas</sub>
 </p>
-<div align="center">
-  <video src="https://github.com/muhammadibrahim313/k8s-kaggle-kernel-clone/raw/main/assets/demo.mp4" width="100%">
-    Your browser does not support the video tag.
-  </video>
-</div>
+
 <br>
 
 ---
