@@ -15,14 +15,14 @@
 
 <a id="demo"></a>
 
-<p align="center">
+<div align="center">
   <video
     src="https://private-user-images.githubusercontent.com/147333130/600595376-1b4e6cfe-6830-415b-b620-dd12afc312a5.mp4?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODAyMzEwNzEsIm5iZiI6MTc4MDIzMDc3MSwicGF0aCI6Ii8xNDczMzMxMzAvNjAwNTk1Mzc2LTFiNGU2Y2ZlLTY4MzAtNDE1Yi1iNjIwLWRkMTJhZmMzMTJhNS5tcDQ_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNTMxJTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDUzMVQxMjMyNTFaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03OGMwYjE4NjVmNWRlNjRjMTQ4ZTBhYWE0YmM4ODllYmEwYmUzNzgwODRkYTIzMzYxNDQ3ZTUxYWI4Yjk0YzA4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9dmlkZW8lMkZtcDQifQ.JlvHxbGHgY0_rIT16FlPiYhUQZVKACbTjlyKOf4BAiI"
-    width="900"
+    width="100%"
     controls
   >
   </video>
-</p>
+</div>
 
 <p align="center">
   <sub>Create notebook → start session → run code → upload CSV → load with pandas</sub>
