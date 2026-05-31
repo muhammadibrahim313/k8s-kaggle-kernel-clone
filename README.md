@@ -17,13 +17,12 @@
 
 <p align="center">
   <video
-    src="https://youtu.be/fAJmxJqo-ms"
+    src="https://github.com/muhammadibrahim313/k8s-kaggle-kernel-clone/raw/main/assets/demo.mp4"
     width="900"
     controls
   >
   </video>
 </p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fAJmxJqo-ms?si=f7eVLUWrlV2AzJZs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <p align="center">
   <sub>Create notebook → start session → run code → upload CSV → load with pandas</sub>
