@@ -17,7 +17,7 @@
 
 <p align="center">
   <video
-    src="https://github.com/muhammadibrahim313/k8s-kaggle-kernel-clone/raw/main/assets/demo.mp4"
+    src="https://youtu.be/fAJmxJqo-ms"
     width="900"
     controls
   >
