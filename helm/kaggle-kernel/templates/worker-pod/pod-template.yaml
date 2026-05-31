@@ -1,0 +1,43 @@
+# This file documents the pod shape spawned dynamically by the Orchestrator.
+# It is NOT applied directly by Helm — it exists as a reference for the
+# pod spec built in orchestrator.py. Values here match what the code builds.
+#
+# To change worker resources, update values.yaml and redeploy the UI Pod
+# (the new values are passed in as env vars, orchestrator.py reads them).
+
+# Example pod shape (for reference):
+#
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   name: worker-<notebook-id-prefix>
+#   namespace: <namespace>
+#   labels:
+#     app: kaggle-kernel-worker
+#     notebook-id: <notebook-id>
+# spec:
+#   restartPolicy: Never
+#   containers:
+#     - name: worker
+#       image: <workerPod.image>
+#       ports:
+#         - containerPort: 8001
+#       env:
+#         - name: NOTEBOOK_ID
+#           value: <notebook-id>
+#         - name: DATA_PATH
+#           value: /data
+#       resources:
+#         requests:
+#           cpu: "500m"
+#           memory: "512Mi"
+#         limits:
+#           cpu: "2"
+#           memory: "2Gi"
+#       volumeMounts:
+#         - name: data
+#           mountPath: /data
+#   volumes:
+#     - name: data
+#       persistentVolumeClaim:
+#         claimName: kaggle-kernel-pvc

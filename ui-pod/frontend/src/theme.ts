@@ -1,0 +1,20 @@
+/** Kaggle-inspired dark theme */
+export const theme = {
+  bg: "#071527",
+  surface: "#0d2137",
+  cellBg: "#0a1929",
+  border: "#1e3a5f",
+  borderHover: "#2d5a8e",
+  borderActive: "#20beff",
+  gutter: "#051018",
+  text: "#e6edf3",
+  textMuted: "#7d8590",
+  accent: "#20beff",
+  green: "#3fb950",
+  red: "#f85149",
+  yellow: "#d29922",
+  markdown: "#c9d1d9",
+  outputBg: "#050d18",
+  fontSans: '-apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif',
+  fontMono: '"SF Mono", "Fira Code", "Consolas", monospace',
+} as const;

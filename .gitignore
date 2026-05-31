@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.env
+
+# Node / React
+node_modules/
+dist/
+build/
+.npm/
+
+# Local data
+*.db
+*.sqlite3
+metadata.db
+/data/
+
+# Personal notes & old assets (local only)
+LEARNING.md
+DESIGN.md
+Inspired_infra.png
+Implemented_infra.jpeg
+ouput1.png
+ouput2.png
+
+# IDE / OS
+.vscode/
+.idea/
+.claude/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

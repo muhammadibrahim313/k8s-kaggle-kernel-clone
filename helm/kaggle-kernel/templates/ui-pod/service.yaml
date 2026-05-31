@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kaggle-kernel-ui
+  namespace: {{ .Values.namespace }}
+spec:
+  selector:
+    app: kaggle-kernel-ui
+  ports:
+    - port: 80
+      targetPort: {{ .Values.uiPod.port }}
+  type: ClusterIP

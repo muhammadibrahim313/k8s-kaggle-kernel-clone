@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kaggle-kernel-ui
+  namespace: {{ .Values.namespace }}
+spec:
+  replicas: {{ .Values.uiPod.replicas }}
+  selector:
+    matchLabels:
+      app: kaggle-kernel-ui
+  template:
+    metadata:
+      labels:
+        app: kaggle-kernel-ui
+    spec:
+      serviceAccountName: kaggle-kernel-ui
+      containers:
+        - name: ui
+          image: {{ .Values.uiPod.image }}
+          imagePullPolicy: {{ .Values.uiPod.imagePullPolicy }}
+          ports:
+            - containerPort: {{ .Values.uiPod.port }}
+          env:
+            - name: DB_PATH
+              value: /data/metadata.db
+            - name: DATA_PATH
+              value: /data
+            - name: K8S_NAMESPACE
+              value: {{ .Values.namespace }}
+            - name: WORKER_IMAGE
+              value: {{ .Values.workerPod.image }}
+            - name: PVC_NAME
+              value: kaggle-kernel-pvc
+            - name: WORKER_PORT
+              value: "{{ .Values.workerPod.port }}"
+          volumeMounts:
+            - name: data
+              mountPath: /data
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: kaggle-kernel-pvc

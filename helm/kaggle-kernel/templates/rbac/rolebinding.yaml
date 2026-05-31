@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: kaggle-kernel-pod-manager-binding
+  namespace: {{ .Values.namespace }}
+subjects:
+  - kind: ServiceAccount
+    name: kaggle-kernel-ui
+    namespace: {{ .Values.namespace }}
+roleRef:
+  kind: Role
+  name: kaggle-kernel-pod-manager
+  apiGroup: rbac.authorization.k8s.io
